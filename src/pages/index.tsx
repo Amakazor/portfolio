@@ -30,7 +30,7 @@ const IndexPage = () => {
         <Layout>
             <CenteredBox>
                 <H1 textColor={theme.colors.primary}>🏗️🧱👷</H1>
-                <H1 textColor={theme.colors.primary}>Site in construction</H1>
+                <H1 textColor={theme.colors.primary}>Site under construction</H1>
                 <H3 textColor={theme.colors.primary}>Please, return later</H3>
                 <H4 textColor={theme.colors.primary}>
                     In the meantime you can try out{' '}
