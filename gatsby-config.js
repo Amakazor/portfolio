@@ -17,5 +17,8 @@ module.exports = {
                 displayName: true,
             },
         },
+            options: {
+                path: `./src/data/`,
+            },
     ],
 };
