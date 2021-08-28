@@ -134,8 +134,6 @@ interface hamburgerProps extends activeColorAndTransitionProps {
 }
 
 const HamburgerIcon = styled(LinkIcon)<hamburgerProps>`
-    position: relative;
-
     padding-right: 0.5rem;
 
     cursor: pointer;
@@ -156,8 +154,8 @@ const HamburgerIcon = styled(LinkIcon)<hamburgerProps>`
         content: '';
 
         display: block;
-        width: 100%;
-        height: 100%;
+        width: 3rem;
+        height: 3rem;
 
         position: absolute;
         top: 0;
