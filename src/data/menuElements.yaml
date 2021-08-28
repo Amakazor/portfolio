@@ -1,0 +1,28 @@
+- name: Home
+  icon: home
+  activeRule: '^\/$'
+  href:
+      default: /
+- name: About me
+  icon: face
+  activeRule: '^\/#about$'
+  href:
+      default: /#about
+- name: Projects
+  icon: task
+  activeRule: '^\/#projects$|\/projects\/.*'
+  href:
+      default: /projects/
+      rules:
+          - rule: '^\/$|^\/#\w*$'
+            href: /#projects
+- name: Experience
+  icon: verified
+  activeRule: '^\/#experience$'
+  href:
+      default: /#experience
+- name: Contact
+  icon: contact_mail
+  activeRule: '^\/#contact$'
+  href:
+      default: /#contact
