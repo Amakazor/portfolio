@@ -1,3 +1,4 @@
+import {PageProps} from 'gatsby';
 import * as React from 'react';
 import {ThemeContext} from 'styled-components';
 import CenteredBox from '../components/centeredBox';
@@ -7,7 +8,7 @@ import H4 from '../components/h4';
 import Layout from '../components/layout';
 import UnderlinedLink from '../components/underlinedLink';
 
-const IndexPage = () => {
+const IndexPage = (props: PageProps) => {
     const theme = React.useContext(ThemeContext);
 
     const underlinedLinkProps = {
@@ -27,7 +28,7 @@ const IndexPage = () => {
     };
 
     return (
-        <Layout>
+        <Layout pageProps={props}>
             <CenteredBox>
                 <H1 textColor={theme.colors.primary}>🏗️🧱👷</H1>
                 <H1 textColor={theme.colors.primary}>Site under construction</H1>
