@@ -29,6 +29,10 @@ const GlobalStyle = createGlobalStyle`
         color: inherit;
         text-decoration: none;
     }
+
+    #gatsby-announcer {
+        color: white;
+    }
 `;
 
 export default GlobalStyle;
