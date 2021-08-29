@@ -22,8 +22,9 @@ interface transitionTimeProps {
 
 interface activeColorAndTransitionProps extends activeColorProps, transitionTimeProps {}
 
-const Main = styled(FullHeightBox)`
-    width: 100%;
+const Main = styled(FullHeightBox)<{margin: string}>`
+    margin-left: ${props => props.margin};
+    width: calc(100% - ${props => props.margin});
 `;
 
 const StyledLinkBackground = styled.div<activeColorAndTransitionProps>`
@@ -284,7 +285,9 @@ const Layout = (props: {children: ReactChild | ReactChild[]; pageProps: PageProp
                     </UnorderedList>
                 </nav>
             </Sidebar>
-            <Main as={'main'}>{props.children}</Main>
+            <Main as={'main'} margin={`calc(5rem + ${theme.sizes.sidebarBorderWidth})`}>
+                {props.children}
+            </Main>
             <footer></footer>
         </>
     );
