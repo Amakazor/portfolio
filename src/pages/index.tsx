@@ -37,11 +37,11 @@ const Heading = styled(H1)<{weight: number}>`
     }
 
     span:first-child > :last-child {
-        margin-left: calc(-2vw - 0.5rem);
+        margin-left: calc(-1vw - 0.5rem);
     }
 
     span:last-child > :first-child {
-        margin-right: calc(-2vw - 0.5rem);
+        margin-right: calc(-1vw - 0.5rem);
     }
 `;
 
@@ -73,7 +73,7 @@ const IndexPage = (props: PageProps) => {
     );
     const technologies = useTechnologies(true);
 
-    const iconFontSize = 'calc(1.5rem + 3vw)';
+    const iconFontSize = 'calc(1rem + 2vw)';
 
     const headingProps = {
         textColor: theme.colors.primary,
