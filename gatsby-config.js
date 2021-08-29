@@ -4,6 +4,7 @@ module.exports = {
     },
     plugins: [
         `gatsby-transformer-yaml`,
+        `gatsby-plugin-react-helmet`,
         {
             resolve: `gatsby-plugin-typescript`,
             options: {
