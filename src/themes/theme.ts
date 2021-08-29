@@ -2,10 +2,10 @@ import getLinearGriadient from '../helpers/getLinearGradient';
 
 const Theme = {
     colors: {
-        background: '#222222',
+        background: '#111111',
         primary: '#FFFFFF',
-        accentMagenta: '#ff5EC5',
-        accentViolet: '#9954ff',
+        accentMagenta: '#FF3695',
+        accentViolet: '#553DB0',
         accentCyan: '#00FFFF',
     },
     gradients: {
@@ -27,9 +27,9 @@ const Theme = {
     },
 };
 
-Theme.gradients.primaryGradient = getLinearGriadient('120deg', [
+Theme.gradients.primaryGradient = getLinearGriadient('110deg', [
     {color: Theme.colors.accentViolet, position: '10%'},
-    {color: Theme.colors.accentMagenta, position: '80%'},
+    {color: Theme.colors.accentMagenta, position: '70%'},
 ]);
 
 Theme.gradients.primaryGradientReversedHorizontal = getLinearGriadient('90deg', [
