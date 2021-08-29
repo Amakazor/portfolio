@@ -4,6 +4,6 @@ export default interface iconProps extends styledIconProps {
 }
 
 export interface styledIconProps {
-    fontSize?: size;
+    fontSize?: size | calcString;
     textColor?: string;
 }
