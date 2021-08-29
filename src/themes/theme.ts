@@ -20,6 +20,10 @@ const Theme = {
         standard: '600ms' as time,
         long: '1000ms' as time,
     },
+    weights: {
+        normal: '400',
+        bold: '600',
+    },
 };
 
 Theme.gradients.primaryGradient = getLinearGriadient('120deg', [
