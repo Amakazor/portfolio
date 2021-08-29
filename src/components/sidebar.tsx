@@ -30,6 +30,7 @@ const Sidebar = styled.aside<SidebarProps>`
 
     border-right: ${props => props.borderWidth} solid ${props => props.borderColor};
     background: ${props => props.backgroundColor};
+    z-index: 2;
 `;
 
 export default Sidebar;
