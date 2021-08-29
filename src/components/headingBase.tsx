@@ -7,13 +7,14 @@ export interface HeadingBaseProps {
     textAling?: 'left' | 'right' | 'center';
     fontSize?: string;
     children: ReactChild | ReactChild[];
+    noMargin?: boolean;
 }
 
 const HeadingBase = styled.span<HeadingBaseProps>`
     color: ${props => props.textColor};
     font-weight: 500;
     margin: 0;
-    margin-bottom: 0.5em;
+    margin-bottom: ${props => !props.noMargin && '0.5em'};
     line-height: 1.1;
     text-align: ${props => props.textAling || 'center'};
 
