@@ -10,6 +10,7 @@ const Theme = {
     },
     gradients: {
         primaryGradient: '',
+        primaryGradientReversedHorizontal: '',
     },
     sizes: {
         borderWidth: '0.125rem' as size,
@@ -29,6 +30,11 @@ const Theme = {
 Theme.gradients.primaryGradient = getLinearGriadient('120deg', [
     {color: Theme.colors.accentViolet, position: '10%'},
     {color: Theme.colors.accentMagenta, position: '80%'},
+]);
+
+Theme.gradients.primaryGradientReversedHorizontal = getLinearGriadient('90deg', [
+    {color: Theme.colors.accentMagenta, position: '10%'},
+    {color: Theme.colors.accentViolet, position: '80%'},
 ]);
 
 export default Theme;
