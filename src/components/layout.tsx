@@ -74,7 +74,7 @@ const StyledLink = styled(Link)<shadowLinkProps>`
 
         border-radius: 50%;
 
-        background: #222222;
+        background: ${props => props.$activeColor};
 
         overflow: hidden;
         opacity: ${props => (props.$isActive ? 1 : 0)};
