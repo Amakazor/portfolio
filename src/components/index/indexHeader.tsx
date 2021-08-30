@@ -62,7 +62,7 @@ const HeaderTechnologyIcon = styled(SimpleIcon)<{index: number}>`
     filter: blur(calc(0.0325rem + 0.0325vw));
 `;
 
-const IndexHeader = () => {
+const IndexHeader = (props: {id: string}) => {
     const theme = React.useContext(ThemeContext);
     const {svgElement, id} = useClipPathSvg(
         'M -0.05572103,0.8601888 C 0.17985188,0.84670548 0.18028227,0.02627666 0.34281863,0.01963819 0.48357699,0.0138892 0.50142585,0.81964236 0.70592117,0.80970714 0.9092945,0.80348085 0.9616916,0.00423243 1.1155425,0.01777431 1.7329171,0.06063347 1.938552,1.0782772 1.5261951,1.6377243 1.2169685,2.0572538 0.39412828,2.0799151 0.22542145,1.9179687 L -0.48150269,1.3515625 Z',
@@ -79,6 +79,7 @@ const IndexHeader = () => {
         <HomeHeader
             gradient={theme.gradients.primaryGradientReversedHorizontal}
             as={'header'}
+            id={props.id}
         >
             {svgElement}
 
