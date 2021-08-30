@@ -5,6 +5,7 @@ import device from '../utility/device';
 export interface HeadingBaseProps {
     textColor: string;
     textAling?: 'left' | 'right' | 'center';
+    textAling?: textAlign;
     fontSize?: string;
     children: ReactChild | ReactChild[];
     noMargin?: boolean;
