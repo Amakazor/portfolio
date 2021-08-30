@@ -7,6 +7,7 @@ export interface UnderlinedLinkProps extends UnderlinedHoverBoxProps {
     target?: string;
     onClick?: MouseEventHandler;
     children?: ReactChild | ReactChild[];
+    title?: string;
 }
 
 export default function UnderlinedLink(props: UnderlinedLinkProps) {
