@@ -24,6 +24,7 @@ const Theme = {
     weights: {
         normal: '400',
         bold: '600',
+        bolder: '700',
     },
 };
 
