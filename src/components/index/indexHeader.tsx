@@ -10,7 +10,6 @@ import pseudoRandomFloat from '../../helpers/pseudoRandomFloat';
 
 const HomeHeader = styled(CenteredBox)<{gradient: string}>`
     padding-top: calc(3rem + 4vw);
-    height: auto;
     background: ${props => props.gradient};
     position: relative;
 `;
