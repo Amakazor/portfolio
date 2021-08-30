@@ -13,8 +13,8 @@ export interface UnderlinedHoverBoxProps {
         };
         underlineColor: string;
     };
-    fontWeight: number;
-    transitionTime: string;
+    fontWeight?: number;
+    transitionTime?: time;
     isBlock?: boolean;
     isFullWidth?: boolean;
 }
