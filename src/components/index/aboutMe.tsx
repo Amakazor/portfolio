@@ -83,7 +83,7 @@ const AboutMe = () => {
                             some useless websites created just for the sake of it
                         </UnderlinedLink>
                     </em>
-                    , playing video games or playing with my animals.
+                    , playing video games or playing with my pets.
                 </Paragraph>
             </TextContainer>
         </>
