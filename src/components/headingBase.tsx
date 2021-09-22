@@ -6,9 +6,10 @@ export interface HeadingBaseProps {
     textColor: string;
     textAling?: textAlign;
     fontSize?: string;
-    children: ReactChild | ReactChild[];
+    children?: ReactChild | ReactChild[];
     noMargin?: boolean;
     topMargin?: boolean;
+    column?: boolean;
 }
 
 const HeadingBase = styled.span<HeadingBaseProps>`
@@ -21,7 +22,7 @@ const HeadingBase = styled.span<HeadingBaseProps>`
     text-align: ${props => props.textAling || 'center'};
 
     display: flex;
-    flex-direction: row;
+    flex-direction: ${props => (props.column ? 'column' : 'row')};
     align-items: baseline;
 
     font-size: ${props => props.fontSize ?? '1rem'};
