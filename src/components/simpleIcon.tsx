@@ -6,7 +6,7 @@ import icons from 'simple-icons';
 const StyledSimpleIcon = styled.svg<styledIconProps>`
     display: inline-block;
 
-    color: ${props => props.textColor};
+    fill: ${props => (props.textColor ? props.textColor : 'currentColor')};
 
     height: ${props => props.fontSize};
     user-select: none;
